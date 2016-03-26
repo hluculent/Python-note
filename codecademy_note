@@ -1,0 +1,9 @@
+1.只有str才可以使用.split\.join的格式；只有list才有append\insert\sort\remove\pop，append是个方法，会改变list，如果list2 = list1.append()，list2会返回none
+2.指数 2**3
+3.str连接时注意“hello ”+“world”，引号里面有空格
+4.“第 %dth 文件”，%d 不空格也是能代入后边的数
+5.not > and > or
+6.len()算长度是从1开始，range()则是从0开始，并且不会算右边界指示的点
+7.移除list和file的东西最好的方式就是not (in)需要移除的东西放到新list和file去
+8.tyler = {"name":"Tyler", "homework":[], "quizzes":[], "tests":[]}
+9.print 0b111, int('111',2)二进制, print ~2
