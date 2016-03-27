@@ -1,0 +1,51 @@
+# !/usr/bin/python
+# -*- coding: UTF-8 -*-
+#
+# # set 可变,会去除str中的重复项
+# # frozenset
+# # 集合比较<是包含于的意思,交&并|差补(前面有后面没有)- 对称差分(对方没有的)^
+# # 集合也有内建函数
+# #
+# # SciPy
+# # ndarray
+# # ufunc
+#
+import numpy as np
+from pandas import Series
+# aArray = array([1,2,3])
+# bArray = array([(1,2,3),(4,5,6)])
+#
+# print zeros((2, 2)), ones((2,2))
+# print arange(1, 5, 0.5)
+#
+# # sin(array)
+# # array.reshape()
+# # array.sum([axis])
+# # where(array0 > x, array1, array2)
+# # fromfunction(fun,sequence)
+# #
+# # #ufun = universal function
+# # np.add.accumulate([]) #向后加
+# # np.multiple.accumulate([]) #向后乘
+#
+# # series 类似一位数组的对象，由数据和索引组成
+# #name属性 NaN-not a number
+# print Series([1, 2.0, 'a'])
+#
+# # DATAFrame-一个表格型数据结构，共享同一个index的series集合
+# print sorted(set('You need Python.'))  # 还有空格和字符在前面呢
+# a = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)])
+# print a[[2]].sum()
+
+from pandas import Series, DataFrame
+# data = {'language': ['Java', 'PHP', 'Python', 'R', 'C#'],
+#             'year': [ 1995 ,  1995 , 1991   ,1993, 2000]}
+# frame = DataFrame(data)
+# frame['IDE'] = Series(['Intellij', 'Notepad', 'IPython', 'R studio', 'VS'])
+# print frame
+# print frame.ix[2]
+sa = Series(['a', 'b', 'c'], index = [0, 1, 2])
+sb = Series(['a', 'b', 'c'])
+sc = Series(['a', 'c', 'b'])
+print sa.equals(sc)
+print sb.equals(sa)
